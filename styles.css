@@ -1,0 +1,142 @@
+/* Scroll settings */
+body::-webkit-scrollbar {
+    width: 8px;
+      height: 8px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1f2227;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  
+  * {
+      margin: 0;
+  }
+  
+  body {
+      /*background-image: url(https://i.imgur.com/x9zl6ix.png);*/
+      background: #1f2227; 
+      height: 100%;
+      width: 100%;
+      color: white;
+      font-family: 'Quattrocento Sans', sans-serif;
+      display: flex;
+    flex-direction: column;
+    align-items :center; /* Centering x-axis */
+  }
+  
+  body .logo {
+      margin: 30px 0 20px 0;
+      width: 550px;	
+  }
+  
+  main {
+      width: 100%;
+      height: 100%;
+  }
+  
+  main .card {
+      width: 600px;
+      height: 250px;
+      display: flex;
+      margin: 15px auto;
+      border-radius: 15px;
+  }
+  
+  main .card .book-image {
+      height: 100%;
+      width: 35%;
+      overflow: hidden;
+      border-bottom-left-radius: 15px;
+      border-top-left-radius: 15px;	
+      display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centering y-axis */
+    align-items :center; /* Centering x-axis */
+  }
+  
+  main .card .book-image img {
+      height: 100%;
+  }
+  
+  main .card .book-info {
+      padding: 15px;
+      width: 65%;
+      border: solid 1px #35383d;
+      border-radius: 15px;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;	
+      border-left: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: top;
+  }
+  
+  main .card .book-info .number {
+      font-size: 1rem;
+      line-height: 1rem;
+  }
+  
+  main .card .book-info .title {
+      font-size: 2rem;
+      line-height: 2rem;
+      margin: 0;
+  }
+  
+  main .card .book-info .author {
+      font-size: 1.3rem;
+      line-height: 1.3rem;
+      margin: 5px 0 0 0;
+  }
+  
+  main .card .book-info .gender {
+      font-size: 1rem;
+      line-height: 1.1rem;
+      margin: 5px 0 0 0;
+  }
+  
+  main .card .book-info .calendar-div {
+      display: flex;
+      margin: 10px 0 0 0;
+      font-size: 0.9rem;
+  }
+  
+  main .card .book-info .calendar-div p {
+      margin: 0;
+  }
+  
+  main .card .book-info .calendar-div .calendar {
+      margin: 0 8px;
+  }
+  
+  main .card .book-info .stars-div {
+      font-size: 1.3rem;
+      margin-top: 15px;
+      margin-bottom: 17px;
+      
+  }
+  
+  main .card .book-info .button {
+      margin: 0 auto;
+  }
+  
+  main .card .book-info .button button {
+      width: 180px;
+      height: 40px;
+      margin: 0 auto;
+      background: #0070f3;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      transition-duration: 0.3s;
+      cursor: pointer;
+  }
+  
+  main .card .book-info .button button:hover {
+      background: #2e8eff;
+      box-shadow: 0 0 4px #fff;
+  }
