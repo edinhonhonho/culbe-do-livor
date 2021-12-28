@@ -1,7 +1,7 @@
 /* Scroll settings */
 body::-webkit-scrollbar {
     width: 8px;
-      height: 8px;
+    height: 8px;
   }
   
   body::-webkit-scrollbar-track {
@@ -13,130 +13,204 @@ body::-webkit-scrollbar {
     border-radius: 20px;
   }
   
-  * {
-      margin: 0;
-  }
+/* Reset */  
+* {
+    margin: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: #1f2227; 
+  color: white;
+  font-family: 'Quattrocento Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items :center;
+}
+
+body header {
+    width: auto;
+    margin: 30px auto 20px ;
+}
+
+/* Logo image */
+body header .logo {
+    width: 550px;	
+}
   
-  body {
-      /*background-image: url(https://i.imgur.com/x9zl6ix.png);*/
-      background: #1f2227; 
-      height: 100%;
-      width: 100%;
-      color: white;
-      font-family: 'Quattrocento Sans', sans-serif;
-      display: flex;
-    flex-direction: column;
-    align-items :center; /* Centering x-axis */
-  }
-  
-  body .logo {
-      margin: 30px 0 20px 0;
-      width: 550px;	
-  }
-  
-  main {
-      width: 100%;
-      height: 100%;
-  }
-  
-  main .card {
-      width: 600px;
-      height: 250px;
-      display: flex;
-      margin: 15px auto;
-      border-radius: 15px;
-  }
-  
-  main .card .book-image {
-      height: 100%;
-      width: 35%;
-      overflow: hidden;
-      border-bottom-left-radius: 15px;
-      border-top-left-radius: 15px;	
-      display: flex;
+/* Cards space */
+main {
+    width: 100%;
+    height: 100%;
+}
+
+/* Cards */
+main .card {
+    width: 600px;
+    height: 250px;
+    display: flex;
+    margin: 15px auto;
+    border-radius: 15px;
+}
+ 
+main .card-hidden {
+    display: none;
+}
+
+/* Cards book image */
+main .card .book-image {
+    height: 100%;
+    width: 35%;
+    overflow: hidden;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;	
+    display: flex;
     flex-direction: column;
     justify-content: center;  /* Centering y-axis */
     align-items :center; /* Centering x-axis */
-  }
+}
   
-  main .card .book-image img {
-      height: 100%;
-  }
+main .card .book-image img {
+    height: 100%;
+}
+
+/* Cards book info */
+main .card .book-info {
+    padding: 15px;
+    width: 65%;
+    border: solid 1px #35383d;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;	
+    border-left: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+}
+
+/* Book number */
+main .card .book-info .number {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Book tile */
+main .card .book-info .title {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 0;
+}
+
+/* Book author */
+main .card .book-info .author {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    margin: 5px 0 0 0;
+}
+
+/* Book gender */
+main .card .book-info .gender {
+    font-size: 1rem;
+    line-height: 1.1rem;
+    margin: 5px 0 0 0;
+}
+
+/* Book date and stars div */
+main .card .book-info .calendar-rate {
+    display: flex;
+    margin: 10px 0 0 0;
+}
+
+/* Book date */
+main .card .book-info .calendar-div {
+    display: flex;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 4px;
+    font-size: 0.9rem;
+}
+
+/* Calendar icon */
+main .card .book-info .calendar-div .calendar {
+    margin: 0 8px;
+}
+
+/* Book stars div */
+main .card .book-info .stars-div {
+    font-size: 1.3rem;
+    margin: 0; 
+    position: relative;
+    display: inline-block;         
+}
+
+/* Book stars */
+main .card .book-info .stars-div .text {
+    font-size: 0.7rem;
+    color: #fff;
+}
   
-  main .card .book-info {
-      padding: 15px;
-      width: 65%;
-      border: solid 1px #35383d;
-      border-radius: 15px;
-      border-bottom-left-radius: 0;
-      border-top-left-radius: 0;	
-      border-left: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: top;
-  }
+/* Tooltip hidden */
+main .card .book-info .stars-div .tooltip-content {
+    visibility: hidden;
+    width: 200px;
+    color: #1f2227;
+    text-align: center;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 1rem;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
   
-  main .card .book-info .number {
-      font-size: 1rem;
-      line-height: 1rem;
-  }
-  
-  main .card .book-info .title {
-      font-size: 2rem;
-      line-height: 2rem;
-      margin: 0;
-  }
-  
-  main .card .book-info .author {
-      font-size: 1.3rem;
-      line-height: 1.3rem;
-      margin: 5px 0 0 0;
-  }
-  
-  main .card .book-info .gender {
-      font-size: 1rem;
-      line-height: 1.1rem;
-      margin: 5px 0 0 0;
-  }
-  
-  main .card .book-info .calendar-div {
-      display: flex;
-      margin: 10px 0 0 0;
-      font-size: 0.9rem;
-  }
-  
-  main .card .book-info .calendar-div p {
-      margin: 0;
-  }
-  
-  main .card .book-info .calendar-div .calendar {
-      margin: 0 8px;
-  }
-  
-  main .card .book-info .stars-div {
-      font-size: 1.3rem;
-      margin-top: 15px;
-      margin-bottom: 17px;
-      
-  }
-  
-  main .card .book-info .button {
-      margin: 0 auto;
-  }
-  
-  main .card .book-info .button button {
-      width: 180px;
-      height: 40px;
-      margin: 0 auto;
-      background: #0070f3;
-      border: none;
-      border-radius: 8px;
-      color: white;
-      transition-duration: 0.3s;
-      cursor: pointer;
-  }
-  
-  main .card .book-info .button button:hover {
-      background: #2e8eff;
-      box-shadow: 0 0 4px #fff;
-  }
+/* Tooltip visible */
+main .card .book-info .stars-div:hover .tooltip-content {
+    visibility: visible;
+}
+
+/* Tooltip table */
+
+main .card .book-info .stars-div .tooltip-content table thead th{
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 1.1rem;
+}
+
+main .card .book-info .stars-div .tooltip-content table tbody tr .name {
+    text-align: right;
+    width: 30%;
+}
+
+main .card .book-info .stars-div .tooltip-content table tbody tr {
+    width: 70%;
+}
+
+/* Book button div */  
+main .card .book-info .button {
+    margin: 0 auto;
+}
+
+/* Book stars div */
+main .card .book-info .button button {
+    width: 180px;
+    height: 40px;
+    margin: 0 auto;
+    background: #0070f3;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    margin-top: 45px;    
+}
+
+/* Book button hover */
+main .card .book-info .button button:hover {
+    background: #2e8eff;
+    box-shadow: 0 0 4px #fff;
+}
