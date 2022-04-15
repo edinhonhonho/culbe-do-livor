@@ -1,5 +1,30 @@
 [
     {
+        "tipo": "Integrante",
+        "id": 1,
+        "nome": "Edson Vargas",
+        "data": "09/03/2021",
+        "imagem": ""
+    },
+
+    {
+        "tipo": "Integrante",
+        "id": 2,
+        "nome": "Eduarda Nazário",
+        "data": "09/03/2021",
+        "imagem": ""
+    },
+
+    {
+        "tipo": "Integrante",
+        "id": 3,
+        "nome": "Pablo Renan",
+        "data": "09/03/2021",
+        "imagem": ""
+    },
+
+    {
+        "tipo": "Livro",
         "id": 1,
         "nome": "Duna",
         "autor": "Frank Herbert",
@@ -14,6 +39,7 @@
     },
 
     {
+        "tipo": "Livro",
         "id": 2,
         "nome": "O Conto de Aia",
         "autor": "Margaret Atwood",
@@ -28,6 +54,7 @@
     },
 
     {
+        "tipo": "Livro",
         "id": 3,
         "nome": "O Homem que Confundiu sua Mulher com um Chapéu",
         "autor": "Oliver Sacks",
@@ -42,6 +69,7 @@
     },
 
     {
+        "tipo": "Livro",
         "id": 4,
         "nome": "Hamlet",
         "autor": "William Shakespeare",
@@ -56,6 +84,7 @@
     },
 
     {
+        "tipo": "Livro",
         "id": 5,
         "nome": "Sapiens - Uma Breve História da Humanidade",
         "autor": "Yuval Noah Harari",
@@ -64,12 +93,13 @@
             "media": null,
             "avaliacoes": [null]
         },
-        "inicio": "",
+        "inicio": "Não iniciado",
         "termino": "",
         "imagem": "https://i.imgur.com/RM6Wbtg.png"
     },
 
     {
+        "tipo": "Livro",
         "id": 6,
         "nome": "O Messias de Duna",
         "autor": "Frank Herbert",
@@ -78,7 +108,7 @@
             "media": null,
             "avaliacoes": [null]
         },
-        "inicio": "",
+        "inicio": "Não iniciado",
         "termino": "",
         "imagem": "https://i.imgur.com/NWRgIqV.png"
     }
