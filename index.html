@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
     <head>
         <!-- Page info -->
         <meta charset="UTF-8">
@@ -13,21 +14,30 @@
         <!-- Page icons -->
         <script src="https://kit.fontawesome.com/164674da4c.js" crossorigin="anonymous"></script>
         <!-- Page styles -->
-        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="styles.css">
         <!-- Page responsiveness -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
-<!--
+    <!--
 
- _._     _,-'""`-._       
-(,-.`._,'(       |\`-/|   
-    `-.-' \ )-`( , o o)  [- |) | |\| |-| () 
-          `-    \`_`"'-   
--->
-        
+    _._     _,-'""`-._       
+    (,-.`._,'(       |\`-/|   
+        `-.-' \ )-`( , o o)  [- |) | |\| |-| () 
+            `-    \`_`"'-   
+ 
+    -->        
+          
     <body> 
-        
+            
+        <header>
+            <img class="logo" src="https://i.imgur.com/numGAJI.png" alt="Desenho de mão segurando livro seguido da frase Culbe do Livor">
+            <div class="search-bar">
+                <input class='input mb-5' type="search" id="searchbox" placeholder="Pesquise...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </header>
+
         <!-- 
         1 #ffadad
         2 #ffd6a5
@@ -38,27 +48,22 @@
         7 #bdb2ff
         8 #ffc6ff
         -->
-        
-        <!-- Logo -->
-        <header>
-            <img class="logo" src="https://i.imgur.com/numGAJI.png" alt="Desenho de mão segurando livro seguido da frase Culbe do Livor">
-        </header>
-        
-        <!-- Cards -->
-        <main>
 
+        <main>
+                 
             <!-- O Velho e o Mar -->
             <div class="card"> 
 
                 <div class="book-image"> <!-- Book image -->
-                    <img src="https://i.imgur.com/9x6UCJr.png" alt="Livro O Velho e o Mar sobre fundo azul">
+                    <img src="https://i.imgur.com/hfsJmgo.png" alt="Livro O Velho e o Mar sobre fundo azul">
                 </div>
             
                 <div class="book-info"> <!-- Book information -->
-                    <span class="number" style="color: #a0c4ff">#6</span> <!-- Book number -->
+                    <span class="number" style="color: #a0c4ff">#6 </span>
                     <h1 class="title">O Velho e o Mar</h1> <!-- Book title -->
                     <p class="author">Ernest Hemingway</p> <!-- Book author -->
                     <p class="gender">Novela, Ficção Naútica</p> <!-- Book gender -->
+                    <p class="recommended">Recomendação: Duda</p>
                     <div class="calendar-rate">
                         <div class="stars-div"> <!-- Book rating -->
                             <span class="stars" style="color: #a0c4ff"> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> </span> <!-- Stars rating -->
@@ -71,27 +76,25 @@
                             </div> 
                         </div>
                         <div class="calendar-div"> <!-- Start and end date -->
-                            <p class="start">11/07/2022</p> <span class="calendar"><i class="fas fa-calendar"></i></span> <p class="finish"></p>
+                            <p class="start">11/07/2022</p> <span class="calendar"><i class="fas fa-calendar"></i></span> <p class="finish">Em leitura</p>
                         </div>
-                    </div>
-                    <div class="button"> <!-- Download button -->
-                        <button onclick="window.open('https://1drv.ms/u/s!AvotKfAqSQr55ikDw2P3pJuSeDd3?e=b2EC2t')">Baixar</button>
                     </div>
                 </div>
             </div>
-            
+
             <!-- O Messias de Duna Duna -->
             <div class="card"> 
 
                 <div class="book-image"> <!-- Book image -->
-                    <img src="https://i.imgur.com/otXtZNF.png" alt="Livro O Messias de Duna sobre fundo azul claro">
+                    <img src="https://i.imgur.com/phtd13g.png" alt="Livro O Messias de Duna sobre fundo azul claro">
                 </div>
             
                 <div class="book-info"> <!-- Book information -->
-                    <span class="number" style="color: #9bf6ff">#5</span> <!-- Book number -->
+                    <span class="number" style="color: #9bf6ff">#5 </span>
                     <h1 class="title">O Messias de Duna</h1> <!-- Book title -->
                     <p class="author">Frank Herbert</p> <!-- Book author -->
                     <p class="gender">Ficção científica, Romance, Literatura fantástica</p> <!-- Book gender -->
+                    <p class="recommended">Recomendação: Grupo</p>
                     <div class="calendar-rate">
                         <div class="stars-div"> <!-- Book rating -->
                             <span class="stars" style="color: #9bf6ff"> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> </span> <!-- Stars rating -->
@@ -104,27 +107,25 @@
                             </div> 
                         </div>
                         <div class="calendar-div"> <!-- Start and end date -->
-                            <p class="start">06/06/2022</p> <span class="calendar"><i class="fas fa-calendar"></i></span> <p class="finish">01/07/2022</p>
+                            <p class="start">99/99/9999</p> <span class="calendar"><i class="fas fa-calendar"></i></span> <p class="finish">99/99/9999</p>
                         </div>
-                    </div>
-                    <div class="button"> <!-- Download button -->
-                        <button onclick="window.open('https://1drv.ms/u/s!AvotKfAqSQr5uAblWKzTOxgLqDX5?e=c0FQeX')">Baixar</button>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Hamlet -->
-             <div class="card"> 
+            <div class="card"> 
 
                 <div class="book-image"> <!-- Book image -->
-                    <img src="https://i.imgur.com/sUyR3uw.png" alt="Livro Sapiens - Uma Breve História da Humanidade sobre fundo verde">
+                    <img src="https://i.imgur.com/etZUfDG.png" alt="Livro Hamlet sobre fundo verde">
                 </div>
             
                 <div class="book-info"> <!-- Book information -->
-                    <span class="number" style="color: #caffbf">#4</span> <!-- Book number -->
+                    <span class="number" style="color: #caffbf">#4 </span>
                     <h1 class="title">Hamlet</h1> <!-- Book title -->
                     <p class="author">William Shakespeare</p> <!-- Book author -->
                     <p class="gender">Peça de teatro, Tragédia</p> <!-- Book gender -->
+                    <p class="recommended">Recomendação: Edinho</p>
                     <div class="calendar-rate">
                         <div class="stars-div"> <!-- Book rating -->
                             <span class="stars" style="color: #caffbf"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> </span> <!-- Stars rating -->
@@ -151,27 +152,25 @@
                             </div> 
                         </div>
                         <div class="calendar-div"> <!-- Start and end date -->
-                            <p class="start">15/04/2022</p> <span class="calendar"><i class="fas fa-calendar"></i></span>31/05/2022<p class="finish"></p>
+                            <p class="start">15/04/2022</p> <span class="calendar"><i class="fas fa-calendar"></i></span> <p class="finish">31/05/2022</p>
                         </div>
-                    </div>
-                    <div class="button"> <!-- Download button -->
-                        <button onclick="window.open('https://1drv.ms/u/s!AvotKfAqSQr53Tx8h4WsAxeoTMt7?e=QSYDQq')">Baixar</button>
                     </div>
                 </div>
             </div>
-            
+
              <!-- O Homem que confundiu sua Mulher com um Chapéu -->
-             <div class="card"> 
+            <div class="card"> 
 
                 <div class="book-image"> <!-- Book image -->
-                    <img src="https://i.imgur.com/iBiOj6V.png" alt="Livro O Homem que Confundiu sua Mulher com um Chapéu sobre fundo amarelo">
+                    <img src="https://i.imgur.com/zfj5LIh.png" alt="Livro O Homem que Confundiu sua Mulher com um Chapéu sobre fundo amarelo">
                 </div>
             
                 <div class="book-info"> <!-- Book information -->
-                    <span class="number" style="color: #fdffb6">#3</span> <!-- Book number -->
+                    <span class="number" style="color: #fdffb6">#3 </span>
                     <h1 class="title">O Homem que Confundiu sua Mulher com um Chapéu</h1> <!-- Book title -->
                     <p class="author">Oliver Sacks</p> <!-- Book author -->
                     <p class="gender">Histórias de Casos</p> <!-- Book gender -->
+                    <p class="recommended">Recomendação: Pablo</p>
                     <div class="calendar-rate">
                         <div class="stars-div"> <!-- Book rating -->
                             <span class="stars" style="color: #fdffb6"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> </span> <!-- Stars rating -->
@@ -201,24 +200,22 @@
                             <p class="start">04/02/2022</p> <span class="calendar"><i class="fas fa-calendar"></i></span> <p class="finish">14/04/2022</p>
                         </div>
                     </div>
-                    <div class="button" style="margin-top: -33px"> <!-- Download button -->
-                        <button onclick="window.open('https://1drv.ms/u/s!AvotKfAqSQr5vHAomE3NONBUbeeT?e=KvuJcE')">Baixar</button>
-                    </div>
                 </div>
-            </div>    
-        
+            </div>
+
             <!-- O Conto da Aia -->
             <div class="card"> 
 
                 <div class="book-image"> <!-- Book image -->
-                    <img src="https://i.imgur.com/BLVloc6.png" alt="Livro O conto de Aia sobre fundo bege">
+                    <img src="https://i.imgur.com/r9kfzhu.png" alt="Livro O conto de Aia sobre fundo bege">
                 </div>
             
                 <div class="book-info"> <!-- Book information -->
-                    <span class="number" style="color: #ffd6a5">#2</span> <!-- Book number -->
+                    <span class="number" style="color: #ffd6a5">#2 </span>
                     <h1 class="title">O Conto da Aia</h1> <!-- Book title -->
                     <p class="author">Margaret Atwood</p> <!-- Book author -->
                     <p class="gender">Romance, Ficção distópica, Ficção científica feminista</p> <!-- Book gender -->
+                    <p class="recommended">Recomendação: Duda</p>
                     <div class="calendar-rate">
                         <div class="stars-div"> <!-- Book rating -->
                             <span class="stars" style="color: #ffd6a5"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i> </span> <!-- Stars rating -->
@@ -248,9 +245,6 @@
                             <p class="start">20/12/2021</p> <span class="calendar"><i class="fas fa-calendar"></i></span> <p class="finish">02/02/2022</p>
                         </div>
                     </div>
-                    <div class="button"> <!-- Download button -->
-                        <button onclick="window.open('https://1drv.ms/u/s!AvotKfAqSQr5uAQ2mcFhsGuxqSbR?e=UBZnQB')">Baixar</button>
-                    </div>
                 </div>
             </div>
 
@@ -258,14 +252,15 @@
             <div class="card"> 
 
                 <div class="book-image"> <!-- Book image -->
-                    <img src="https://i.imgur.com/hmOqhhg.png" alt="Livro Duna sobre fundo rosa">
+                    <img src="https://i.imgur.com/blokwPC.png" alt="Livro Duna sobre fundo rosa">
                 </div>
             
                 <div class="book-info"> <!-- Book information -->
-                    <span class="number" style="color: #ffadad">#1</span> <!-- Book number -->
+                    <span class="number" style="color: #ffadad">#1 </span>
                     <h1 class="title">Duna</h1> <!-- Book title -->
                     <p class="author">Frank Herbert</p> <!-- Book author -->
                     <p class="gender">Ficção científica, Romance, Literatura fantástica</p> <!-- Book gender -->
+                    <p class="recommended">Recomendação: Grupo</p>
                     <div class="calendar-rate">
                         <div class="stars-div"> <!-- Book rating -->
                             <span class="stars" style="color: #ffadad"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> </span> <!-- Stars rating -->
@@ -295,9 +290,6 @@
                             <p class="start">02/08/2021</p> <span class="calendar"><i class="fas fa-calendar"></i></span> <p class="finish">13/10/2021</p>
                         </div>
                     </div>
-                    <div class="button"> <!-- Download button -->
-                        <button onclick="window.open('https://1drv.ms/u/s!AvotKfAqSQr5uAblWKzTOxgLqDX5?e=c0FQeX')">Baixar</button>
-                    </div>
                 </div>
             </div>
         
@@ -305,6 +297,6 @@
         
     </body>
 
-</html>    
-    
-    
+</html>
+
+<script src="script.js"></script>
