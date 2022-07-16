@@ -401,8 +401,6 @@ footer a {
     main .card .book-info .stars-div {
         margin: 0;         
     }
-
-    
     
     /* Tooltip hidden */
     main .card .book-info .stars-div .tooltip-content {
@@ -410,8 +408,14 @@ footer a {
         left: 27%;
     }
     
+    /* Club card */
+    main .club {
+        width: 270px;
+    }
 
-
+    main .club picture img {
+        width: 90px;
+    }
 
 
 
