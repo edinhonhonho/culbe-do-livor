@@ -20,20 +20,20 @@
 }
 
 /* Scroll settings */
-   body::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 8px;
     height: 8px;
-  }
+}
   
-  body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     background: var(--background);
-  }
+}
   
-  body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background-color: var(--backgroud-contrast);
     border-radius: 20px;;
-  }
-  
+}
+
 /* Reset */  
 * {
     margin: 0;
@@ -206,7 +206,7 @@ main .card .book-info .stars-div .text {
 main .card .book-info .stars-div .tooltip-content {
     visibility: hidden;
     width: 200px;
-    color: var(--backgroud-contrast);
+    color: var(--background);
     text-align: center;
     padding: 8px;
     border-radius: 6px;
