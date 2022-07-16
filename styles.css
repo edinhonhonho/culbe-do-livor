@@ -1,5 +1,5 @@
 :root {
-    --member-in: #c5ff6d;
+    --member-in: #d3ff6d;
     --mermber-out: #ff6d6d;
 
     --link: #6d88ff;
@@ -320,4 +320,44 @@ footer {
 footer a {
     text-decoration: none;
     color: var(--link);
+}
+
+@media (max-width:700px) {
+    header .logo {
+        width: 80%;	
+        margin: 0 auto;
+    }
+    
+    header .search-bar {
+        width: 80%;
+        position: relative;
+        margin-top: 20px;
+    }
+    
+    header .search-bar i {
+        position: absolute;   
+        top: 14px;
+        right: 14px;
+        z-index: -1;
+        color: var(--background-middle-contrast);
+    }
+    
+    /* Search bar */
+    header .search-bar input {
+        height: 45px;
+        width: 100%;
+        padding: 5px 40px 5px 10px;
+        border: solid 2px var(--backgroud-contrast);
+        border-radius: 10px;
+        background: none; 
+        color: var(--backgroud-contrast);
+        font-size: 1rem;
+        font-weight: bold;
+        outline: none;    
+    }
+    
+    header .search-bar input:hover ~ i, 
+    header .search-bar input:focus ~ i {
+        color: var(--backgroud-contrast);
+    }
 }
