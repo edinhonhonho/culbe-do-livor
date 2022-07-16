@@ -338,6 +338,7 @@ footer a {
     }
     
     header .search-bar i {
+        top: 12px;
         font-size: 1.4rem;
     }
     
@@ -371,51 +372,24 @@ footer a {
     main .card .book-info {
         border: solid 1px var(--outline);
         border-radius: 0 0 15px 15px;
-        width: calc(100% - 2px);
-        padding: 10px 0;
-
-    }
-
-    /* Book number */
-    main .card .book-info .number {
-        font-size: 1.2rem;
-        font-weight: bold;
+        width: calc(100% - 22px);
+        padding: 10px;
     }
 
     /* Book tile */
     main .card .book-info .title {
-        font-size: 1.8rem;
-        line-height: 1.8rem;
-        margin: 0;
-        margin-top: 5px;
-    }
-
-    /* Book author */
-    main .card .book-info .author {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         line-height: 1.3rem;
-        margin: 8px 0 0 0;
-    }
-
-    /* Book gender */
-    main .card .book-info .gender,
-    main .card .book-info .recommended {
-        font-size: 1rem;
-        line-height: 1.1rem;
-        margin: 5px 0 0 0;
     }
 
     /* Book date and stars div */
     main .card .book-info .calendar-rate {
-        margin: 5px 0 0 0;
-        display: flex;
+        flex-direction: column;
     }
 
     /* Book date */
     main .card .book-info .calendar-div {
-        display: flex;
-        margin: 10px 0 0 10px;
-        font-size: 0.9rem;
+        margin: 10px 0 0 0;
     }
 
     /* Calendar icon */
@@ -425,53 +399,17 @@ footer a {
 
     /* Book stars div */
     main .card .book-info .stars-div {
-        font-size: 1.3rem;
-        margin: 5px 0 0 0; 
-        position: relative;
-        display: inline-block;         
+        margin: 0;         
     }
 
-    /* Book stars */
-    main .card .book-info .stars-div .text {
-        font-size: 0.7rem;
-        color: var(--backgroud-contrast);
-    }
+    
     
     /* Tooltip hidden */
     main .card .book-info .stars-div .tooltip-content {
-        visibility: hidden;
-        width: 200px;
-        color: var(--background);
-        text-align: center;
-        padding: 8px;
-        border-radius: 6px;
-        font-size: 1rem;   
-        position: absolute;
-        z-index: 1;
-        top: -5px;
-        left: 105%;
+        top: 0;
+        left: 27%;
     }
     
-    /* Tooltip visible */
-    main .card .book-info .stars-div:hover .tooltip-content {
-        visibility: visible;
-    }
-
-    /* Tooltip table */
-    main .card .book-info .stars-div .tooltip-content table thead th {
-        font-size: 1.2rem;
-        font-weight: 100;
-        line-height: 1.1rem;
-    }
-
-    main .card .book-info .stars-div .tooltip-content table tbody tr .name {
-        text-align: right;
-        width: 30%;
-    }
-
-    main .card .book-info .stars-div .tooltip-content table tbody tr {
-        width: 70%;
-    }
 
 
 
