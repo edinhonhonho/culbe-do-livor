@@ -1,15 +1,36 @@
+:root {
+    --member-in: #c5ff6d;
+    --mermber-out: #ff6d6d;
+
+    --link: #6d88ff;
+
+    --color-1: #ffadad;
+    --color-2: #ffd6a5;
+    --color-3: #fdffb6;
+    --color-4: #caffbf ;
+    --color-5: #9bf6ff;
+    --color-6: #a0c4ff;
+    --color-7: #bdb2ff;
+    --color-8: #ffc6ff;
+
+    --background: #1f2227;
+    --background-middle-contrast: #777;
+    --backgroud-contrast: #fff;
+    --outline: #35383d;
+}
+
 /* Scroll settings */
-body::-webkit-scrollbar {
+   body::-webkit-scrollbar {
     width: 8px;
     height: 8px;
   }
   
   body::-webkit-scrollbar-track {
-    background: #1f2227;
+    background: var(--background);
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: #fff;
+    background-color: var(--backgroud-contrast);
     border-radius: 20px;;
   }
   
@@ -25,8 +46,8 @@ body::-webkit-scrollbar {
 body {
   height: 100%;
   width: 100%;
-  background: #1f2227; 
-  color: white;
+  background: var(--background); 
+  color: var(--backgroud-contrast);
   font-family: 'Quattrocento Sans', sans-serif;
   display: flex;
   flex-direction: column;
@@ -53,7 +74,7 @@ header .search-bar i {
     top: 14px;
     right: 14px;
     z-index: -1;
-    color: #777;
+    color: var(--background-middle-contrast);
 }
 
 /* Search bar */
@@ -61,10 +82,10 @@ header .search-bar input {
     height: 45px;
     width: 100%;
     padding: 5px 40px 5px 10px;
-    border: solid 2px #fff;
+    border: solid 2px var(--backgroud-contrast);
     border-radius: 10px;
     background: none; 
-    color: #fff;
+    color: var(--backgroud-contrast);
     font-size: 1rem;
     font-weight: bold;
     outline: none;    
@@ -72,7 +93,7 @@ header .search-bar input {
 
 header .search-bar input:hover ~ i, 
 header .search-bar input:focus ~ i {
-    color: #fff;
+    color: var(--backgroud-contrast);
 }
 
 /* Where the cards are */
@@ -110,7 +131,7 @@ main .card .book-image img {
 main .card .book-info {
     padding: 15px;
     width: 65%;
-    border: solid 1px #35383d;
+    border: solid 1px var(--outline);
     border-radius: 15px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;	
@@ -178,20 +199,18 @@ main .card .book-info .stars-div {
 /* Book stars */
 main .card .book-info .stars-div .text {
     font-size: 0.7rem;
-    color: #fff;
+    color: var(--backgroud-contrast);
 }
   
 /* Tooltip hidden */
 main .card .book-info .stars-div .tooltip-content {
     visibility: hidden;
     width: 200px;
-    color: #1f2227;
+    color: var(--backgroud-contrast);
     text-align: center;
     padding: 8px;
     border-radius: 6px;
-    font-size: 1rem;
-   
-    /* Position the tooltip text - see examples below! */
+    font-size: 1rem;   
     position: absolute;
     z-index: 1;
     top: -5px;
@@ -204,8 +223,7 @@ main .card .book-info .stars-div:hover .tooltip-content {
 }
 
 /* Tooltip table */
-
-main .card .book-info .stars-div .tooltip-content table thead th{
+main .card .book-info .stars-div .tooltip-content table thead th {
     font-size: 1.2rem;
     font-weight: 100;
     line-height: 1.1rem;
@@ -222,36 +240,84 @@ main .card .book-info .stars-div .tooltip-content table tbody tr {
 
 /* Members card */
 main .member {
-    /*border: #2053aa solid 1px;*/
+    border: solid 1px var(--outline);
+    border-radius: 15px;
     width: 80%;
     height: 100px;
     display: flex;
     margin: 0 auto 20px auto;
+    padding: 20px 20px;
     border-radius: 15px;
+}
+
+main .member picture {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centering y-axis */
+    align-items :left; /* Centering x-axis */
 }
 
 main .member picture img {
     border-radius: 50%;
     width: 100px;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 main .member .member-info {
     margin: auto 0;
 }
 
-main .member .member-info .number-name {
+main .member .member-info .name-message {
     display: flex;
 }
 
-main .member .member-info .number{
-    font-size: 0.8rem;
-    font-weight: bold;
-    padding-top: 3px;
-    color: #d8bffa;
+main .member .member-info .name-message .name {
+    font-size: 1.4rem;
 }
 
-main .member .member-info .name {
-    font-size: 1.12rem;
-    margin: 0 0 0 5px;
+main .member .member-info .name-message .message {
+    color: var(--member-in);
+    padding: 4px 0 0 6px;
+}
+
+main .member .member-info .description {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+/* Club card */
+main .club {
+    width: 335px;
+    height: 100px;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+main .club picture img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+main .club .club-info {
+    margin: auto 0;
+}
+
+main .club .club-info .message {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--link);
 }
