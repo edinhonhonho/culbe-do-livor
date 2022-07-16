@@ -252,6 +252,7 @@ main .member {
 
 main .member picture {
     height: 100%;
+    min-width: 120px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
