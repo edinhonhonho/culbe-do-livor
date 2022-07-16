@@ -411,10 +411,11 @@ footer a {
     /* Club card */
     main .club {
         width: 270px;
+        height: 80px;
     }
 
     main .club picture img {
-        width: 90px;
+        width: 80px;
     }
 
 
